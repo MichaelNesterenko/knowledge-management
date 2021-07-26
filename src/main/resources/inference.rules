@@ -1,0 +1,10 @@
+@prefix: <http://discovery.inference#> .
+
+[hasClob:
+	(?schema :hasTable ?table)
+	(?table :hasColumn ?column)
+	(?column :hasType ?type)
+	equal(?type, 'clob')
+	->
+	(:conclusion :hasAttribute :schemaHasClob)
+]

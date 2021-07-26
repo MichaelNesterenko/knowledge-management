@@ -1,0 +1,6 @@
+@prefix: <http://discovery.inference#> .
+
+:dbSchema :hasTable :table1 .
+:table1 :hasColumn :table1_column1 .
+
+:table1_column1 :hasType 'clob' .
